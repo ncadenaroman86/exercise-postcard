@@ -1,0 +1,100 @@
+body {
+	background-color: #1c1c1c;
+	font-family: 'Patrick Hand', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.postcard {
+	background-color: white;
+	width: 800px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	border: 5px solid black;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+}
+
+.postcard-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.postcard-header h1 {
+	font-size: 34px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.postcard-header img {
+	width: 100px;
+	height: 100px;
+}
+
+.postcard-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px;
+	flex: 1;
+}
+
+.body-left,
+.body-right {
+	width: 48%;
+	padding: 10px;
+}
+
+.body-left p {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.4;
+	color: black;
+	margin: 0;
+}
+
+.body-left p + p {
+	margin-top: 20px; /* Space between paragraphs only */
+}
+
+.body-right {
+	margin-top: 2px; /* Align with first line of paragraph */
+}
+
+.body-right input {
+	width: 100%;
+	margin: 12px 0;
+	padding: 8px 4px;
+	border: none;
+	border-bottom: 2px solid #aaa;
+	font-size: 16px;
+	background-color: transparent;
+	font-family: inherit;
+	margin-left: 10px; /* Shift inputs slightly to the right */
+}
+
+.postcard-footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+button {
+	background-color: #eee;
+	border: 2px solid #999;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+button:hover {
+	background-color: #ccc;
+}
